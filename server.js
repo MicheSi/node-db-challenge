@@ -10,7 +10,7 @@ server.use(express.json());
 server.use(helmet());
 
 server.use('/api/projects', ProjectRouter);
-server.use('api/resourcses', ResourceRouter);
+server.use('/api/resources', ResourceRouter);
 
 server.get('/', (req, res) => {
     res.send('Server is running');
